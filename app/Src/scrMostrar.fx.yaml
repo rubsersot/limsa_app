@@ -1,0 +1,26 @@
+scrMostrar As screen:
+
+    Gallery2 As gallery.variableTemplateHeightGallery:
+        DelayItemLoading: =true
+        Height: =650
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =280
+        Width: =1366
+        Y: =116
+        ZIndex: =1
+
+        Button1 As button:
+            OnSelect: =Navigate(scrPdf)
+            Text: ="Generar PDF"
+            X: =1180
+            Y: =32
+            ZIndex: =1
+
+    Button3 As button:
+        Text: ="Hola"
+        X: =232
+        Y: =226
+        ZIndex: =2
+

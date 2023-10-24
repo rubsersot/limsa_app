@@ -1,0 +1,97 @@
+scrPdf As screen:
+    OnVisible: |
+        =Set(
+            varPdf1,
+            PDF(
+                Container2,
+                 {
+                    Orientation: PaperOrientation.Portrait,
+                    Size: PaperSize.A4,
+                    ExpandContainers: true,
+                    Margin: "0pt 0pt 0pt 0pt",
+                    DPI: 60.6
+                }
+            )
+        )
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =768
+        Width: =726
+        ZIndex: =1
+
+        Container3 As groupContainer.verticalAutoLayoutContainer:
+            Height: =768
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =726
+            ZIndex: =1
+
+            Container5 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =1
+
+            Container5_1 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =2
+
+            Container5_2 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =3
+
+            Container5_3 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =4
+
+            Container5_4 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =5
+
+            Container5_5 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =6
+
+            Container5_6 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =700
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Width: =730
+                ZIndex: =7
+
+    PdfViewer1 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =varPdf1
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =768
+        X: =726
+        ZIndex: =2
+

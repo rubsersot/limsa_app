@@ -1,0 +1,8 @@
+scrRegistrar As screen:
+
+    Button2 As button:
+        Text: ="Registrar"
+        X: =1124
+        Y: =684
+        ZIndex: =1
+
